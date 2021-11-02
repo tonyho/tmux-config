@@ -108,6 +108,7 @@ List all the commands: `tmux list-commands`
 
 ## More configs / Tools
 
+* [A detail config guide](http://louiszhai.github.io/2017/09/30/tmux/#Tmux-Continuum)
 * *Modular dot-config example* [tony/.dot-config](https://github.com/tony/.dot-config)
 * *Save / Load your tmux workspaces through JSON or YAML* with [tmuxp](https://github.com/tony/tmuxp).
 * *Clone + Synchronize your git / hg / svn projects through JSON / YAML* with [vcspull](https://github.com/tony/vcspull).
