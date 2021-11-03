@@ -84,7 +84,11 @@ echo 'export PATH=/home/hexiongjun/.tmux/plugins/PathPicker:$PATH' >> ~/.bashrc
 . ~/.bashrc
 ```
 #### Install fzf, used in [extrako](https://github.com/laktak/extrakto)
-Ref: https://github.com/junegunn/fzf#usage
+
+Ref: 
+
+- https://github.com/junegunn/fzf#usage
+- https://zhuanlan.zhihu.com/p/91873965
 
 ```
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
