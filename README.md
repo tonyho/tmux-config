@@ -65,6 +65,11 @@ sudo chmod +x /usr/local/bin/tmux-mem-cpu-load
 
 ### Step5:Clone and install plugins
 
+#### Install tpm
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
 #### Install xsel/xclip for [tmux-yank](https://github.com/tmux-plugins/tmux-yank)
 
 tmux-yank used for copy to system clipboard:
