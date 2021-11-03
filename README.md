@@ -8,19 +8,19 @@ Some modfication applied.
 
 ## Installation
 
-### Download
+### Step1: Download
 
 ```bash
 git clone --recursive https://github.com/tonyho/tmux-config.git ~/.tmux
 ```
 
-### ln tmux config to home:
+### Step2: ln tmux config to home:
 
 ```bash
 ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
 ```
 
-### Go to config dir
+### Step3: Go to config dir
 
 ```bash
 cd ~/.tmux
@@ -28,7 +28,7 @@ cd ~/.tmux
 
 ## Status bar setting
 
-### `tmux-mem-cpu-load` compiling and install
+### Step4: `tmux-mem-cpu-load` compiling and install
 
 Works on Linux and OS X.
 
@@ -49,7 +49,7 @@ sudo make install
 
 tmux-mem-cpu-load is installed our binary to `/usr/local/bin/tmux-mem-cpu-load`:
 
-### Alternative: basic-cpu-and-memory.tmux
+### Step4: Alternative: basic-cpu-and-memory.tmux
 
 (Cross platform, tested with python 2.7+) Update March 19, 2014. Works with psutil 2.0 now.
 
@@ -62,6 +62,50 @@ sudo cp ~/.tmux/vendor/basic-cpu-and-memory.tmux /usr/local/bin/tmux-mem-cpu-loa
 
 sudo chmod +x /usr/local/bin/tmux-mem-cpu-load
 ```
+
+### Step5:Clone and install plugins
+
+#### Install xsel/xclip for [tmux-yank](https://github.com/tmux-plugins/tmux-yank)
+
+tmux-yank used for copy to system clipboard:
+```
+ sudo apt-get install xsel xclip
+```
+
+#### Install fpp used in [tmux-fpp](https://github.com/tmux-plugins/tmux-fpp) plugin
+```
+mkdir ~/.tmux/plugins
+cd ~/.tmux/plugins
+git clone https://github.com/facebook/PathPicker.git
+
+## For bashrc
+echo 'export PATH=/home/hexiongjun/.tmux/plugins/PathPicker:$PATH' >> ~/.bashrc
+
+. ~/.bashrc
+```
+#### Install fzf, used in [extrako](https://github.com/laktak/extrakto)
+Ref: https://github.com/junegunn/fzf#usage
+
+```
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
+
+### Install urlview for tmux-urlview
+
+```
+sudo apt install urlview
+```
+
+### Install tmux plugins
+Start tmux: `tmux`
+
+Press the keys: 
+```
+Prefix + I
+```
+
+Wait the installation to be finished.
 
 ## Start tmux
 
