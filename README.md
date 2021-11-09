@@ -84,7 +84,7 @@ cd ~/.tmux/plugins
 git clone https://github.com/facebook/PathPicker.git
 
 ## For bashrc
-echo 'export PATH=/home/hexiongjun/.tmux/plugins/PathPicker:$PATH' >> ~/.bashrc
+echo 'export PATH=~/.tmux/plugins/PathPicker:$PATH' >> ~/.bashrc
 
 . ~/.bashrc
 ```
