@@ -128,7 +128,8 @@ To reattach a previous session:
 
 To reload config file
 
-`<Control + b>:` (which could Ctrl-B or Ctrl-A if you overidden it) then `source-file ~/.tmux.conf`
+`<Control + x>:`  then `source-file ~/.tmux.conf`
+or  `<Control + x r>`
 
 ### Commands/keys
 
