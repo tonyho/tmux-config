@@ -129,7 +129,8 @@ To reattach a previous session:
 To reload config file
 
 `<Control + x>:`  then `source-file ~/.tmux.conf`
-or  `<Control + x r>`
+
+or `<Control + x r>`
 
 ### Commands/keys
 
@@ -138,7 +139,6 @@ Our prefix/leader key is `Control + x` now. This sequence must be typed before a
 * `Control + x` before any command
 * `Control + x` then `?` to bring up list of keyboard shortcuts
 * `Control + x` then `"` to split window
-* `Control + x` then `<Space>` to change pane arrangement
 * `Control + x` then `o` to rotate panes
 * `Control + x` then `h`, `j`, `k`, `l` to move left, down, up, right. Respectively. (vim hjkl)
 * `Control + x` then `;` to go to last panel
@@ -150,6 +150,40 @@ Beyond your first window:
 * `Control + x` then `p` to previous window
 * `Control + x` then `[0-9]` move to window number
 * `Control + x` then `&` to kill window
+
+#### Plugins
+
+##### Pomodoro **
+
+* `Control + x` then `b` to start a 25minits Pomodoro work unit
+* `Control + x` then `B` to stop the on-goning Pomodoro work unit
+
+##### tmux-jump **
+
+* `Control + x` then `j` to enter the jump, you can continue input the chars to jump fast
+
+#### [tmux-thumbs](https://github.com/fcsonline/tmux-thumbs)
+
+* `Control + x` then `space` to enter the thumbs mode to jump and select text fast
+
+See the plugin's readme for to know the following functions:
+* Multiple selection
+* Auto Paste
+
+#### [tmux-notify](https://github.com/ChanderG/tmux-notify)
+
+* prefix + m: Start monitoring a pane and notify when it finishes.
+* prefix + alt + m: Start monitoring a pane, return it in focus and notify when it finishes.
+* prefix + M: Cancel monitoring of a pane.
+
+#### [tmux-copycat](https://github.com/tmux-plugins/tmux-copycat)
+
+* prefix + ctrl-f - simple file search
+* prefix + ctrl-g - jumping over git status files (best used after git status command)
+* prefix + alt-h - jumping over SHA-1/SHA-256 hashes (best used after git log command)
+* prefix + ctrl-u - url search (http, ftp and git urls)
+* prefix + ctrl-d - number search (mnemonic d, as digit)
+* prefix + alt-i - ip address search
 
 Custom:
 
@@ -166,6 +200,7 @@ List all the commands: `tmux list-commands`
 
 ## More configs / Tools
 
+* [All TP Plugins](https://github.com/tmux-plugins/list)
 * [A detail config guide](http://louiszhai.github.io/2017/09/30/tmux/#Tmux-Continuum)
 * *Modular dot-config example* [tony/.dot-config](https://github.com/tony/.dot-config)
 * *Save / Load your tmux workspaces through JSON or YAML* with [tmuxp](https://github.com/tony/tmuxp).
